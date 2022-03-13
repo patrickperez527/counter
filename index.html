@@ -11,33 +11,25 @@
         * {
             font-family: 'Poppins';
         }
-        .content {
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            width: 100%;
-            -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-        }
     </style>
 </head>
-<body class="bg-light">
+<body class="bg-light text-dark h-100">
     <div class="container container-fluid mt-5">
         <h1 class="h1 text-center display-1 fw-bold">Counter</h1>
         <div class="counter">
-            <h1 class="h1 counter-value text-center display-1 fw-bold mb-2">0</h1>
+            <h1 class="h1 counter-value text-center display-1 fw-bold mb-2 counter-h1">0</h1>
             <div class="counter-controls text-center btn-group container-fluid">
-                <button class="btn btn-danger text-center fs-3 text-uppercase" id="decrease" data-action="decrease"><i class="fa-solid fa-minus"></i></button>
-                <button class="btn btn-dark text-center fs-3 text-uppercase" id="reset" data-action="reset"><i class="fa fa-refresh"></i>
+                <button class="btn btn-danger text-center fs-3 text-uppercase fw-bold" id="decrease" data-action="decrease"><i class="fa-solid fa-minus"></i></button>
+                <button class="btn btn-dark text-center fs-3 text-uppercase fw-bold" id="reset" data-action="reset"><i class="fa fa-refresh"></i>
                 </button>
-                <button class="btn btn-success text-center fs-3 text-uppercase" id="increase" data-action="increase"><i class="fa-solid fa-plus"></i></button>
+                <button class="btn btn-success text-center fs-3 text-uppercase fw-bold" id="increase" data-action="increase"><i class="fa-solid fa-plus"></i></button>
             </div>
         </div>
 
         <div class="save text-center mt-2 btn-group container-fluid">
-            <button class="btn btn-primary fs-3 text-uppercase mb-2" id="save" data-action="save"><i class="fa-solid fa-floppy-disk"></i></button>
-            <button class="btn btn-warning fs-3 text-uppercase mb-2" id="load" data-action="load"><i class="fa-solid fa-spinner"></i></button>
-            <button class="btn btn-danger fs-3 text-uppercase mb-2" id="clear" data-action="clear"><i class="fa-solid fa-trash"></i></button>
+            <button class="btn btn-primary fs-3 text-uppercase mb-2 fw-bold" id="save" data-action="save"><i class="fa-solid fa-floppy-disk"></i></button>
+            <button class="btn btn-warning fs-3 text-uppercase mb-2 fw-bold" id="load" data-action="load"><i class="fa-solid fa-spinner"></i></button>
+            <button class="btn btn-danger fs-3 text-uppercase mb-2 fw-bold" id="clear" data-action="clear"><i class="fa-solid fa-trash"></i></button>
         </div>
     </div>
     <script src="script.js"></script>

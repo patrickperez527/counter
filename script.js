@@ -1,8 +1,9 @@
 const actions = Array.from(document.querySelectorAll('[data-action]'));
 
 let counter = localStorage.getItem('counter') || 0;
+let counterValue = document.querySelector('.counter-value');
 
-document.querySelector('.counter-value').innerText = counter;
+counterValue.innerText = counter;
 
 actions.forEach(action => {
     action.addEventListener('click', () => {
@@ -30,7 +31,15 @@ actions.forEach(action => {
                 break;   
         }
 
-        document.querySelector('.counter-value').innerText = counter;
+        if (counter > 0) {
+            counterValue.style.color = '#28a745'
+        } else if (counter < 0) {
+            counterValue.style.color = '#dc3545'
+        } else if (counter === 0){
+            counterValue.style.color = '#212529'
+        }
+
+        counterValue.innerText = counter;
     })
 })
 
