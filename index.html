@@ -7,31 +7,19 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <title>Counter</title>
-    <style>
-        * {
-            font-family: 'Poppins';
-        }
-    </style>
 </head>
-<body class="bg-light text-dark h-100">
-    <div class="container container-fluid mt-5">
-        <h1 class="h1 text-center display-1 fw-bold">Counter</h1>
-        <div class="counter">
-            <h1 class="h1 counter-value text-center display-1 fw-bold mb-2 counter-h1">0</h1>
-            <div class="counter-controls text-center btn-group container-fluid">
-                <button class="btn btn-danger text-center fs-3 text-uppercase fw-bold" id="decrease" data-action="decrease"><i class="fa-solid fa-minus"></i></button>
-                <button class="btn btn-dark text-center fs-3 text-uppercase fw-bold" id="reset" data-action="reset"><i class="fa fa-refresh"></i>
-                </button>
-                <button class="btn btn-success text-center fs-3 text-uppercase fw-bold" id="increase" data-action="increase"><i class="fa-solid fa-plus"></i></button>
-            </div>
-        </div>
-
-        <div class="save text-center mt-2 btn-group container-fluid">
-            <button class="btn btn-primary fs-3 text-uppercase mb-2 fw-bold" id="save" data-action="save"><i class="fa-solid fa-floppy-disk"></i></button>
-            <button class="btn btn-warning fs-3 text-uppercase mb-2 fw-bold" id="load" data-action="load"><i class="fa-solid fa-spinner"></i></button>
-            <button class="btn btn-danger fs-3 text-uppercase mb-2 fw-bold" id="clear" data-action="clear"><i class="fa-solid fa-trash"></i></button>
+<body class="bg-light text-dark">
+    <div class="container container-fluid text-center mt-5 pt-5" style="font-family: 'Poppins', sans-serif;">
+        <h1 class="display-1 fw-bolder" id="title">Counter</h1>
+        <h1 class="display-1 fw-bolder" id="value">0</h1>
+        <div class="mt-3 btn-group d-flex flex-wrap">
+            <button class="btn decrease btn-danger text-uppercase fw-bold fs-4" data-bs-toggle="tooltip" data-bs-placement="top" title="Counter - 1"><i class="fa-solid fa-minus"></i></button>
+            <button class="btn reset btn-primary text-uppercase fw-bold fs-4" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Reset Counter"><i class="fa-solid fa-arrow-rotate-right"></i></button>
+            <button class="btn increase btn-success text-uppercase fw-bold fs-4" data-bs-toggle="tooltip" data-bs-placement="top" title="Counter + 1"><i class="fa-solid fa-plus"></i></button>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/84a94563a7.js" crossorigin="anonymous"></script>
 </body>
